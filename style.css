@@ -152,3 +152,30 @@ body {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+/* --- vista para el celular --- */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* El aside se acomoda debajo en pantallas pequeñas */
+    }
+
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+
+    .menu ul {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .barra-lateral {
+        position: static;
+        width: 100%;
+    }
+}
