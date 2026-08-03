@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Header fijo con Logo a la izquierda y Nav a la derecha -->
+    <header class="encabezado">
+        <div class="logo">
+            <img src="img/moay.jpg" alt="Logo Galería">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de mí</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Contenedor Principal que une la sección One Page con el Aside -->
+    <main class="contenedor-principal">
+        <!-- 3. sección del contenido one page-->
+        <section class="contenido">
+
+            <!-- sección 1: inicio -->
+            <article id="Inicio" class="seccion-pantalla">
+                <h1>Catálogo Fotógrafico Personal</h1>
+                <p>Bienvenido a mi espacio visual donde muestro una colección de fotografías.</p>
+            </article>
+
+            <!-- sección 2: acerca de mí -->
+            <article id="acerca" class="seccion-pantalla">
+                <h2>Acerca de mí</h2>
+                <p>Hola, soy estudiante de Diseño Gráfico Digital. Este sitio web fue creado con el fin de integrar los conocimientos de HTML5 y CSS3 dentro de la materia de Principios de Programación Digital.</p>
+            </article>
+
+            <!-- sección 3: galería fotográfica organizada en cards -->
+            <article id="galeria" class="seccion-pantalla">
+                <h2>Galería de Objetos Favoritos</h2>
+
+                <div class="galeria-cards">
+
+                </div>
+            </article>
+        </section>
+
+        <!-- 4. barra lateral (barra lateral)-->
+        <aside class="barra-lateral">
+            <div class="widget">
+                <h3>Equipo y Herramientas</h3>
+                <ul>
+                    <li>Cámara: </li>
+                    <li>Edición: Adobe Photoshop</li>
+                    <li>Formato: One Page Web</li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Detalles Técnicos</h3>
+                <p><strong>Curso:</strong> Principios de Programación Digital</p>
+                <p><strong>Fotografías:</strong> 100% Originales</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 - Mi Galería Personal | Centro Universitario República de México | Alumna: Jade Guadalupe Pacheco Uc | Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

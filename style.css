@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* desplazamiento suave para el one page */
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333333;
+    padding-top: 80px; /* compesasión por la barra fija superior */
+}
+
+/* --- header y nav fijos (requisitos mínimos) --- */
+.encabezado {
+    position: fixed; /* header fijo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* menú de navegación */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #13dde8; 
+}
+
+/* --- contendor principal, secciones y aside */
+.contenedor-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* área de contenido de la one page */
+.contenido {
+    flex: 3; /* toma el un aproximado creo que el 70 a 75% del ancho */
+}
+
+.seccion-pantalla {
+    min-height: 85vh; /* ocupa la mayor parte de la pantalla */
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.seccion-pantalla h1, .seccion-pantalla h2 {
+    font-size: 2.2rem;
+    color: #222831;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00adb5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.seccion-pantalla p {
+    line-height: 1.6;
+    color: #555555;
+    font-size: 1.1rem;
+}
+
+/* barra lateral (aside) */
+.barra-lateral {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    height: fit-content;
+    position: sticky; /* se fija al hacer scroll */
+    top: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.widget {
+    margin-bottom: 30px;
+}
+
+.widget h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #222831;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+}
+
+.widget ul {
+    list-style: none;
+}
+
+.widget ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #dddddd;
+    font-size: 0.95rem;
+}
+
+.widget p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* --- tarjetas / cards de la galería --- */
+
+
+
+/*  --- footer --- */
+.pie {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
