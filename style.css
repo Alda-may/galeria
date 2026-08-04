@@ -140,8 +140,70 @@ body {
 }
 
 /* --- tarjetas / cards de la galería --- */
+.galeria-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
 
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantiene la proporción de tus fotos editadas */
+}
+
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222831;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+/* Botón decorativo de la card */
+.btn {
+    display: inline-block;
+    text-align: center;
+    background-color: #00adb5;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #393e46;
+}
 
 /*  --- footer --- */
 .pie {
