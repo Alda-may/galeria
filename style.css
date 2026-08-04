@@ -100,6 +100,23 @@ body {
     font-size: 1.1rem;
 }
 
+/* estilos para la foto de presentación */
+.foto-presentacion {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-presentacion img {
+    width: 100%;
+    max-width: 650px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* barra lateral (aside) */
 .barra-lateral {
     flex: 1;
@@ -203,6 +220,40 @@ body {
 
 .btn:hover {
     background-color: #393e46;
+}
+
+/* Estilos para la lista de Contacto */
+.redes-sociales {
+    list-style: none; /* Elimina las viñetas por defecto */
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio vertical entre cada red */
+}
+
+.redes-sociales li a {
+    display: flex;
+    align-items: center; /* Centra el icono verticalmente con el texto */
+    gap: 12px; /* Espacio entre el icono y el texto */
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover interactivo */
+.redes-sociales li a:hover {
+    color: #00adb5;
+    transform: translateX(5px); /* Desplaza ligeramente a la derecha al pasar el mouse */
+}
+
+/* Tamaño de las imágenes/íconos */
+.icono-red {
+    width: 32px;  /* Ancho recomendado para íconos */
+    height: 32px; /* Alto recomendado */
+    object-fit: contain;
 }
 
 /*  --- footer --- */
